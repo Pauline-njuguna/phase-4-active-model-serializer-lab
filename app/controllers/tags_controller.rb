@@ -6,6 +6,14 @@ class TagsController < ApplicationController
     render json: tags
   end
 
+  def create_table 
+    tags =Tag.def new
+      render json:tag 
+    end
+    
+  end
+  
+
   def show
     tag = Tag.find(params[:id])
     render json: tag
